@@ -1,0 +1,9 @@
+          // const obj ={
+            //     id: uuidv4(),
+            //     name: args.name,
+            //     username: args.username,
+            //     age: args.age,
+            // }
+            // const user = args.input;
+            // const lastId = UserList[UserList.length - 1].id;
+            // user.id = lastId + 1;

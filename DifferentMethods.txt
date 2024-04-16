@@ -1,0 +1,55 @@
+
+//getUsers
+
+query getMovies($movieName:String!){
+  movie(name:$movieName){
+    name
+    isInTheaters
+  }
+}
+
+{"movieName": "Avengers Endgame"}
+
+//createUser
+
+mutation createUser($user: userInputType!){
+  createUser(user: $user) {
+    id 
+    name 
+    username
+    age
+  }
+}
+
+
+{
+  "user": 
+  {
+    "id":"11",
+    "name":"Williams",
+    "username":"William",
+    "age":27
+  }
+
+}
+
+
+
+//different Update Method (Mutation) 
+
+          // const id = args.updateUsername.id;
+            // const newUsername = args.updateUsername.newUsername
+            const convertDataType = parseInt(args.id)
+
+            //Different Method
+        //     db.UserList = db.UserList.map((val)=>{
+        //         if(val.id === args.id){
+        //             return {...val,...args.updateUsername}
+        //         }
+        //         return val
+        //     })
+
+        //   return db.games.find((item) => item.id === args.id)
+        // 
+
+

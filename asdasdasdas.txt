@@ -1,0 +1,7 @@
+        const convertDataType = parseInt(parent.id)
+
+        return db.MovieList.find((moviesId)=>{
+            const convertSecondDataType = parseInt(moviesId.id)
+            return convertDataType === convertSecondDataType 
+        })
+        // return db.UserList
